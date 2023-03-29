@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+:root {
+  font-size: 16px;
+  font-family: 'Nanum Myeongjo', serif;
+  --mw: 360px;
+  --c-bg: #f8f8f9;
+  --c-font1: #ffffff;
+  --c-font2: #2b3744;
+  --c-font3: #80878f;
+  --c-index-bg: #1c5a7c;
+  --c-write-bg: #106354;
+  --c-detail-bg: #54117d;
+  --c-edit-bg: #71441b;
+  --c-categori1: #000000;
+  --c-categori2: #17a14e;
+  --c-categori3: #f4c550;
+  --c-categori4: #cb9647;
+  --c-categori5: #4765b0;
+}
+.mw {
+  max-width: var(--mw);
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
