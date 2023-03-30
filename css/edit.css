@@ -2,7 +2,7 @@
 @import url(./common.css);
 
 .title {
-  background-color: var(--c-write-bg);
+  background-color: var(--c-edit-bg);
 }
 #title {
   border: none;
@@ -52,9 +52,70 @@
   border-radius: 6px;
   font-family: 'Nanum Myeongjo', serif;
   font-size: 16px;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
-
+#contents.justify {
+  text-align: justify;
+}
+#contents.left {
+  text-align: left;
+}
+#contents.center {
+  text-align: center;
+}
+#contents.right {
+  text-align: right;
+}
+#contents.small {
+  font-size: 0.6rem;
+}
+#contents.medium {
+  font-size: 1rem;
+}
+#contents.large {
+  font-size: 1.5rem;
+}
+.tap {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  /* display: none; */
+}
+.editing {
+  width: 100%;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.fa-solid {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.editing span {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.editing span:nth-of-type(1) {
+  font-size: 0.6rem;
+}
+.editing span:nth-of-type(2) {
+  font-size: 1rem;
+}
+.editing span:nth-of-type(3) {
+  font-size: 1.5rem;
+}
 .btns {
   justify-content: flex-end;
   align-items: center;

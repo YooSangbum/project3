@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>write</title>
+    <title>detail</title>
     <link rel="stylesheet" href="./CSS/my_reset.css" />
     <!-- 구글폰트 -->
     <link
@@ -23,35 +23,23 @@
   </head>
   <body>
     <div class="all_wrap">
-      <h1 class="title">Write</h1>
+      <h1 class="title">Detail</h1>
       <div class="wrap mw">
-        <form action="">
-          <input type="text" name="title" id="title" value="Title.제목입력" />
-          <div class="categori">
-            <label for="diary" class="diary">일기</label>
-            <input type="radio" name="categori" id="diary" />
-            <label for="memo" class="memo">메모</label>
-            <input type="radio" name="categori" id="memo" />
-            <label for="todo" class="todo">할일</label>
-            <input type="radio" name="categori" id="todo" />
+        <div class="classify">
+          <div class="categori">일기</div>
+          <div class="bookmark">
+            <img src="./image/bookmark.png" alt="bookmark" />
           </div>
-          <textarea name="contents" id="contents"> 내용 입력</textarea>
-          <div class="btns">
-            <input type="button" name="cancel" id="cancel" value="취소" />
-            <label for="bookmark"
-              ><div class="bookmark">
-                <img src="./image/bookmarkbig.png" alt="bookmark" />
-              </div>
-            </label>
-            <input
-              type="checkbox"
-              name="bookmark"
-              id="bookmark"
-              value="책갈피"
-            />
-            <input type="submit" name="send" id="send" value="이야기 보내기" />
-          </div>
-        </form>
+        </div>
+        <div class="top">
+          <h2>list.title</h2>
+          <p>23.03.28</p>
+        </div>
+        <div class="contents">내용</div>
+        <div class="btns">
+          <a class="delete" href="./index.html">삭제</a>
+          <a class="modify" href="./edit.html">수정</a>
+        </div>
       </div>
     </div>
   </body>
