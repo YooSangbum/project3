@@ -4,72 +4,197 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>인덱스 페이지</title>
+    <title>index</title>
     <link rel="stylesheet" href="./CSS/my_reset.css" />
+
     <!-- 구글폰트 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      .swiper_wrap {
+        height: calc(100vh - 55px - 250px);
+        overflow: hidden;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: relative;
+        transform: rotate(0deg) translate(2.5%, 50%);
+        color: black;
+        font-size: 10px;
+        width: 100%;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        content: '\f103';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 16px;
+        position: absolute;
+        /* left: 50%; */
+      }
+    </style>
   </head>
   <body>
     <div class="all_wrap">
       <h1 class="title">Title</h1>
       <div class="wrap mw">
-        <ul>
-          <li class="list">
-            <div class="categori">일기</div>
-            <div class="bookmark">
-              <img src="./image/bookmark.png" alt="bookmark" />
+        <!-- Swiper -->
+        <div class="swiper_wrap">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다. . .
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다12312412. . .
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다2. . .
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다. 124212412. .
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다. 124212412. .
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다. 124212412. .
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="list">
+                  <div class="categori">일기</div>
+                  <div class="bookmark">
+                    <img src="./image/bookmark.png" alt="bookmark" />
+                  </div>
+                  <div class="list_p_wrap">
+                    <p class="list_title">list title</p>
+                    <p class="date">23.03.28</p>
+                  </div>
+                  <p class="list_contents">
+                    작성된 내용의 일부를 보여줍니다. 124212412. .
+                  </p>
+                </li>
+              </div>
             </div>
-            <div class="list_p_wrap">
-              <p class="list_title">list title</p>
-              <p class="date">23.03.28</p>
-            </div>
-            <p class="list_contents">작성된 내용의 일부를 보여줍니다. . .</p>
-          </li>
-          <li class="list">
-            <div class="categori">일기</div>
-            <div class="bookmark">
-              <img src="./image/bookmark.png" alt="bookmark" />
-            </div>
-            <div class="list_p_wrap">
-              <p class="list_title">list title</p>
-              <p class="date">23.03.28</p>
-            </div>
-            <p class="list_contents">작성된 내용의 일부를 보여줍니다. . .</p>
-          </li>
-          <li class="list">
-            <div class="categori">일기</div>
-            <div class="bookmark">
-              <img src="./image/bookmark.png" alt="bookmark" />
-            </div>
-            <div class="list_p_wrap">
-              <p class="list_title">list title</p>
-              <p class="date">23.03.28</p>
-            </div>
-            <p class="list_contents">작성된 내용의 일부를 보여줍니다. . .</p>
-          </li>
-          <li class="list">
-            <div class="categori">일기</div>
-            <div class="bookmark">
-              <img src="./image/bookmark.png" alt="bookmark" />
-            </div>
-            <div class="list_p_wrap">
-              <p class="list_title">list title</p>
-              <p class="date">23.03.28</p>
-            </div>
-            <p class="list_contents">작성된 내용의 일부를 보여줍니다. . .</p>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <!-- <i class="fa-solid fa-angles-down"></i> -->
+
         <div class="btns">
           <button class="latest">최신이야기</button>
           <button class="old">오래된 이야기</button>
           <button class="remember">기억하고 싶은 이야기</button>
+          <button class="add">+ 이야기 추가</button>
         </div>
-        <button class="add">+</button>
       </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        direction: 'vertical',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

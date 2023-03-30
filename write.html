@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>write</title>
+    <link rel="stylesheet" href="./CSS/my_reset.css" />
+    <!-- 구글폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/write.css" />
+  </head>
+  <body>
+    <div class="all_wrap">
+      <h1 class="title">Write</h1>
+      <div class="wrap mw">
+        <form action="">
+          <input type="text" name="title" id="title" value="Title.제목입력" />
+          <div class="categori">
+            <label for="diary" class="diary">일기</label>
+            <input type="radio" name="categori" id="diary" />
+            <label for="memo" class="memo">메모</label>
+            <input type="radio" name="categori" id="memo" />
+            <label for="todo" class="todo">할일</label>
+            <input type="radio" name="categori" id="todo" />
+          </div>
+          <textarea name="contents" id="contents"> 내용 입력</textarea>
+          <div class="btns">
+            <input type="button" name="cancel" id="cancel" value="취소" />
+            <label for="bookmark"
+              ><div class="bookmark">
+                <img src="./image/bookmarkbig.png" alt="bookmark" />
+              </div>
+            </label>
+            <input
+              type="checkbox"
+              name="bookmark"
+              id="bookmark"
+              value="책갈피"
+            />
+            <input type="submit" name="send" id="send" value="이야기 보내기" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

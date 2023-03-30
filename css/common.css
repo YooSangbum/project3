@@ -23,3 +23,30 @@
   width: calc(100% - 2rem);
   margin: 0 auto;
 }
+
+.all_wrap {
+  max-width: var(--mw);
+  margin: 1rem;
+  border-radius: 6px 6px 0 0;
+  background-color: var(--c-bg);
+  width: var(--mw);
+}
+.title {
+  width: 360px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-index-bg);
+  color: var(--c-font1);
+  font-size: 24px;
+  border-radius: 6px 6px 0 0;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  flex-wrap: wrap;
+  padding: 20px 0 20px;
+}
