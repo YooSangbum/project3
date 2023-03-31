@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>write</title>
+    <link rel="stylesheet" href="/public/CSS/my_reset.css" />
+    <!-- 구글폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/public/css/write.css" />
+  </head>
+  <body>
+    <div class="all_wrap">
+      <h1 class="title">Write</h1>
+      <div class="wrap mw">
+        <form action="/add" method="post">
+          <input type="text" name="title" id="title" value="Title.제목입력" />
+          <div class="categori">
+            <label for="diary" class="diary">일기</label>
+            <input type="radio" name="categori" value="diary" id="diary" />
+            <label for="memo" class="memo">메모</label>
+            <input type="radio" name="categori" value="memo" id="memo" />
+            <label for="todo" class="todo">할일</label>
+            <input type="radio" name="categori" value="todo" id="todo" />
+          </div>
+
+          <input type="date" id="currentDate" name="today" hidden />
+          <textarea name="contents" id="contents"> 내용 입력</textarea>
+          <div class="btns">
+            <a href="/" id="cancel">취소</a>
+            <label for="bookmark"
+              ><div class="bookmark">
+                <img src="/public/image/bookmarkbig.png" alt="bookmark" />
+              </div>
+            </label>
+            <input
+              type="checkbox"
+              name="bookmark"
+              id="bookmark"
+              value="bookmark"
+            />
+            <input type="submit" name="send" id="send" value="이야기 보내기" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('currentDate').value = new Date()
+        .toISOString()
+        .substring(0, 10);
+    </script>
+    <!-- <script>
+      let date = new Date();
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1;
+      let day = date.getDate();
+      let today = document.getElementById('current_date');
+      today.innerHTML = `${year}년 ${month}월 ${day}일`;
+    </script> -->
+  </body>
+</html>
