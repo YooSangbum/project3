@@ -35,6 +35,7 @@
   font-family: 'Nanum Gothic Coding', monospace;
   font-size: 12px;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 .memo {
   background-color: var(--c-categori2);
@@ -56,26 +57,18 @@
 }
 
 .btns {
+  border: 1px solid blue;
   justify-content: flex-end;
   align-items: center;
   height: 100px;
 }
-.bookmark {
-  background-color: var(--c-font1);
-  border-radius: 10px;
-  width: 44.32px;
-  height: 37px;
-  margin-left: 10px;
+.btns img {
+  margin-left: 0.6rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  position: relative;
+  border-radius: 6px;
   cursor: pointer;
 }
-.bookmark img {
-  position: absolute;
-  left: -3.5px;
-  top: 15%;
-  margin-left: 1rem;
-}
+
 #cancel,
 #send {
   border: none;

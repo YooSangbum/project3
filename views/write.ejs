@@ -29,11 +29,17 @@
           <input type="text" name="title" id="title" value="Title.제목입력" />
           <div class="categori">
             <label for="diary" class="diary">일기</label>
-            <input type="radio" name="categori" value="diary" id="diary" />
+            <input
+              type="radio"
+              name="categori"
+              value="일기"
+              id="diary"
+              hidden
+            />
             <label for="memo" class="memo">메모</label>
-            <input type="radio" name="categori" value="memo" id="memo" />
+            <input type="radio" name="categori" value="메모" id="memo" hidden />
             <label for="todo" class="todo">할일</label>
-            <input type="radio" name="categori" value="todo" id="todo" />
+            <input type="radio" name="categori" value="할일" id="todo" hidden />
           </div>
 
           <input type="date" id="currentDate" name="today" hidden />
@@ -41,15 +47,14 @@
           <div class="btns">
             <a href="/" id="cancel">취소</a>
             <label for="bookmark"
-              ><div class="bookmark">
-                <img src="/public/image/bookmarkbig.png" alt="bookmark" />
-              </div>
+              ><img src="/public/image/책갈피.png" alt="" />
             </label>
             <input
               type="checkbox"
               name="bookmark"
               id="bookmark"
               value="bookmark"
+              hidden
             />
             <input type="submit" name="send" id="send" value="이야기 보내기" />
           </div>
