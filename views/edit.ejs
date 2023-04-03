@@ -32,16 +32,21 @@
           <input type="text" name="title" id="title" value="<%= post.제목%>" />
           <div class="categori">
             <label for="diary" class="diary">일기</label>
-            <input type="radio" name="categori" id="diary" />
+            <input
+              type="radio"
+              name="categori"
+              value="일기"
+              id="diary"
+              hidden
+            />
             <label for="memo" class="memo">메모</label>
-            <input type="radio" name="categori" id="memo" />
+            <input type="radio" name="categori" value="메모" id="memo" hidden />
             <label for="todo" class="todo">할일</label>
-            <input type="radio" name="categori" id="todo" />
+            <input type="radio" name="categori" value="할일" id="todo" hidden />
           </div>
+          <input type="date" id="currentDate" name="today" hidden />
           <textarea name="contents" id="contents"><%= post.내용 %></textarea>
-          <!-- <div class="tap">
-            <i class="fa-solid fa-ellipsis"></i>
-          </div> -->
+
           <div class="editing">
             <i class="fa-solid fa-align-justify"></i>
             <i class="fa-solid fa-align-left"></i>
@@ -54,21 +59,24 @@
           <div class="btns">
             <a herf="/detail/<%= post._id %>" id="cancel">취소</a>
             <label for="bookmark"
-              ><div class="bookmark">
-                <img src="./image/bookmarkbig.png" alt="bookmark" />
-                <%= post.책갈피 %>
-              </div>
+              ><img src="/public/image/책갈피.png" alt="" />
             </label>
             <input
               type="checkbox"
               name="bookmark"
               id="bookmark"
-              value="책갈피"
+              value="https://github.com/YooSangbum/project3/blob/master/public/image/%EC%B1%85%EA%B0%88%ED%94%BC1.png?raw=true"
+              hidden
             />
             <input type="submit" name="send" id="send" value="이야기 보내기" />
           </div>
         </form>
       </div>
     </div>
+    <script>
+      document.getElementById('currentDate').value = new Date()
+        .toISOString()
+        .substring(0, 10);
+    </script>
   </body>
 </html>

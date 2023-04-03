@@ -26,10 +26,11 @@
       <h1 class="title">Detail</h1>
       <div class="wrap mw">
         <div class="classify">
-          <div class="categori"><%= data.구분%></div>
+          <div class="categori" data-value="<%= data.구분 %>">
+            <%= data.구분%>
+          </div>
           <div class="bookmark">
-            <img src="./image/bookmark.png" alt="bookmark" />
-            <%= data.책갈피%>
+            <img src=" <%= data.책갈피 %>" />
           </div>
         </div>
         <div class="top">

@@ -40,6 +40,7 @@
             <input type="radio" name="categori" value="메모" id="memo" hidden />
             <label for="todo" class="todo">할일</label>
             <input type="radio" name="categori" value="할일" id="todo" hidden />
+            <input type="radio" name="categori" value="" id="none" hidden />
           </div>
 
           <input type="date" id="currentDate" name="today" hidden />
@@ -53,7 +54,7 @@
               type="checkbox"
               name="bookmark"
               id="bookmark"
-              value="bookmark"
+              value="https://github.com/YooSangbum/project3/blob/master/public/image/%EC%B1%85%EA%B0%88%ED%94%BC1.png?raw=true"
               hidden
             />
             <input type="submit" name="send" id="send" value="이야기 보내기" />
@@ -66,6 +67,14 @@
       document.getElementById('currentDate').value = new Date()
         .toISOString()
         .substring(0, 10);
+
+      const bookmarkCheckbox = document.getElementById('bookmark');
+      if (condition == true) {
+        bookmarkCheckbox.value =
+          'https://github.com/YooSangbum/project3/blob/master/public/image/%EC%B1%85%EA%B0%88%ED%94%BC1.png?raw=true';
+      } else {
+        bookmarkCheckbox.removeAttribute('value');
+      }
     </script>
     <!-- <script>
       let date = new Date();

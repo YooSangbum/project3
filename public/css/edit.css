@@ -35,6 +35,7 @@
   font-family: 'Nanum Gothic Coding', monospace;
   font-size: 12px;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 .memo {
   background-color: var(--c-categori2);
@@ -75,23 +76,7 @@
 #contents.large {
   font-size: 1.5rem;
 }
-/* .tap {
-  width: 38px;
-  height: 38px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-  display: none;
-}
-.tap.hidden {
-  display: none;
-} */
 .editing {
-  width: 100%;
   height: 38px;
   background-color: #ffffff;
   border-radius: 6px;
@@ -127,21 +112,11 @@
   align-items: center;
   height: 100px;
 }
-.bookmark {
-  background-color: var(--c-font1);
-  border-radius: 10px;
-  width: 44.32px;
-  height: 37px;
-  margin-left: 10px;
+.btns img {
+  margin-left: 0.6rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  position: relative;
+  border-radius: 6px;
   cursor: pointer;
-}
-.bookmark img {
-  position: absolute;
-  left: -3.5px;
-  top: 15%;
-  margin-left: 1rem;
 }
 #cancel,
 #send {

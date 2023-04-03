@@ -66,10 +66,13 @@
               <div class="swiper-slide">
                 <li class="list">
                   <a href="/detail/<%=post[list]._id %>">
-                    <div class="categori"><%= post[list].구분 %></div>
-                    <div class="bookmark">
-                      <%= post[list].책갈피 %>
-                      <img src="/public/image/bookmark.png" alt="bookmark" />
+                    <div class="cate_wrap">
+                      <div class="categori" data-value="<%= post[list].구분 %>">
+                        <%= post[list].구분 %>
+                      </div>
+                      <div class="bookmark">
+                        <img src=" <%= post[list].책갈피 %>" />
+                      </div>
                     </div>
                     <div class="list_p_wrap">
                       <p class="list_title"><%= post[list].제목 %></p>
@@ -108,6 +111,21 @@
           prevEl: '.swiper-button-prev',
         },
       });
+
+      const rememberBtn = document.querySelector('.remember');
+
+      // function filterPosts() {
+      //   const alllist = document.querySelectorAll('.list');
+      //   alllist.forEach((post) => {
+      //     const bookmark = post.querySelector('.bookmark img');
+      //     if (!bookmark || bookmark.getAttribute('src') === '') {
+      //       post.classList.add('hidden');
+      //     } else {
+      //       post.classList.remove('hidden');
+      //     }
+      //   });
+      // }
+      // rememberBtn.addEventListener('click', filterPosts);
     </script>
   </body>
 </html>

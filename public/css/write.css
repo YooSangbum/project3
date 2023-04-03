@@ -57,10 +57,8 @@
 }
 
 .btns {
-  border: 1px solid blue;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
 }
 .btns img {
   margin-left: 0.6rem;
