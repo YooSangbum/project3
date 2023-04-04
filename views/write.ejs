@@ -69,12 +69,18 @@
         .substring(0, 10);
 
       const bookmarkCheckbox = document.getElementById('bookmark');
-      if (condition == true) {
-        bookmarkCheckbox.value =
-          'https://github.com/YooSangbum/project3/blob/master/public/image/%EC%B1%85%EA%B0%88%ED%94%BC1.png?raw=true';
-      } else {
-        bookmarkCheckbox.removeAttribute('value');
-      }
+      let condition;
+
+      bookmarkCheckbox.addEventListener('click', function () {
+        if (this.checked) {
+          condition = true;
+          bookmarkCheckbox.value =
+            'https://github.com/YooSangbum/project3/blob/master/public/image/%EC%B1%85%EA%B0%88%ED%94%BC1.png?raw=true';
+        } else {
+          condition = false;
+          bookmarkCheckbox.removeAttribute('value');
+        }
+      });
     </script>
     <!-- <script>
       let date = new Date();
