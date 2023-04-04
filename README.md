@@ -4,8 +4,6 @@ project3\_(nodejs + express + mongoDB 활용한 웹페이지)
 
 ---
 
----
-
 ### 프로젝트 기간
 
 > 2023.03.27 - 2023.04.04
@@ -15,8 +13,8 @@ project3\_(nodejs + express + mongoDB 활용한 웹페이지)
 ### 프로젝트 목적 및 내용 요약
 
 > nodejs + express + mongoDB를 활용해서 간단한 게시판 구현하기 <br>
-> CLOUDTYPE 을 통해서 배포하기 (https://port-0-project3-1io3t2blg1m8e0b.sel3.cloudtype.app/) <br>
-> 데이터베이스까지 연동하여 실제 웹페이지가 어떻게 작동하는지 경험을 하는 것에 의의를 둠
+> CLOUDTYPE 을 통해서 배포하기 <br>(https://port-0-project3-1io3t2blg1m8e0b.sel3.cloudtype.app/) <br>
+> 데이터베이스까지 연동하여 실제 웹페이지가 어떻게 작동하는지 경험하는 것에 의의를 둠
 
 ---
 
@@ -51,9 +49,9 @@ project3\_(nodejs + express + mongoDB 활용한 웹페이지)
 
 ---
 
-### 예약페이지 과정
+### 이야기 추가, 수정, 삭제 과정
 
-> ![PCPLAY](https://user-images.githubusercontent.com/124753255/227924840-263fdda8-608f-439e-beab-34a7b7b10431.gif)
+> ![PCPLAY](https://github.com/YooSangbum/project3/blob/master/readme_image/chrome_k8TNbFXtsY.gif?raw=true)
 
 ---
 
@@ -70,12 +68,14 @@ project3\_(nodejs + express + mongoDB 활용한 웹페이지)
 
 #### 와이어프레임
 
-> <a href="https://www.figma.com/file/VVm6I3AmaIR6i8oEmPA7BD/%EC%9C%A0%EC%83%81%EB%B2%94_CRUD(%EB%A9%94%EB%AA%A8%EC%9E%A5)?node-id=30%3A591&t=S96R81rOJQqrT3FA-1">피그마 와이어프레임</a>
+> <a href="https://www.figma.com/file/VVm6I3AmaIR6i8oEmPA7BD/%EC%9C%A0%EC%83%81%EB%B2%94_CRUD(%EB%A9%94%EB%AA%A8%EC%9E%A5)?node-id=30%3A591&t=S96R81rOJQqrT3FA-1">피그마 와이어프레임</a> > <img src="https://github.com/YooSangbum/project3/blob/master/readme_image/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.jpg?raw=true">
 
 #### 시안
 
-> <a href="https://www.figma.com/file/VVm6I3AmaIR6i8oEmPA7BD/%EC%9C%A0%EC%83%81%EB%B2%94_CRUD(%EB%A9%94%EB%AA%A8%EC%9E%A5)?node-id=30%3A591&t=S96R81rOJQqrT3FA-1">피그마 시안</a>
+> <a href="https://www.figma.com/file/VVm6I3AmaIR6i8oEmPA7BD/%EC%9C%A0%EC%83%81%EB%B2%94_CRUD(%EB%A9%94%EB%AA%A8%EC%9E%A5)?node-id=30%3A591&t=S96R81rOJQqrT3FA-1">피그마 시안</a> > <img src="https://github.com/YooSangbum/project3/blob/master/readme_image/%EB%94%94%EC%9E%90%EC%9D%B8%20%20%EC%8B%9C%EC%95%88%20%EC%99%84%EC%84%B1.jpg?raw=true">
 
 ---
 
 #### 스타일가이드
+
+<img src="https://github.com/YooSangbum/project3/blob/master/readme_image/styleguide.jpg?raw=true">
