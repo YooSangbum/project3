@@ -58,9 +58,7 @@
           </div>
           <div class="btns">
             <a href="/" id="cancel">취소</a>
-            <label for="bookmark"
-              ><img src="/public/image/책갈피.png" alt="" />
-            </label>
+            <label class="bookmark" for="bookmark"> </label>
             <input
               type="checkbox"
               name="bookmark"
@@ -73,10 +71,5 @@
         </form>
       </div>
     </div>
-    <script>
-      document.getElementById('currentDate').value = new Date()
-        .toISOString()
-        .substring(0, 10);
-    </script>
   </body>
 </html>

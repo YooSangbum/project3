@@ -47,9 +47,7 @@
           <textarea name="contents" id="contents"> 내용 입력</textarea>
           <div class="btns">
             <a href="/" id="cancel">취소</a>
-            <label for="bookmark"
-              ><img src="/public/image/책갈피.png" alt="" />
-            </label>
+            <label class="bookmark" for="bookmark"> </label>
             <input
               type="checkbox"
               name="bookmark"
@@ -64,10 +62,12 @@
     </div>
 
     <script>
+      // 날짜
       document.getElementById('currentDate').value = new Date()
         .toISOString()
         .substring(0, 10);
 
+      // 북마크 값 넣기
       const bookmarkCheckbox = document.getElementById('bookmark');
       let condition;
 
@@ -78,17 +78,41 @@
             'https://github.com/YooSangbum/project3/blob/master/public/image/%EC%B1%85%EA%B0%88%ED%94%BC1.png?raw=true';
         } else {
           condition = false;
-          bookmarkCheckbox.removeAttribute('value');
+          bookmarkCheckbox.value = '';
+          // bookmarkCheckbox.removeAttribute('value');
         }
       });
+
+      // 북마크 클릭 변경
+      const bookmark = document.querySelector('.bookmark');
+      let bookmarkImg = `<img src="/public/image/책갈피.png" alt="" />`;
+
+      bookmark.innerHTML = bookmarkImg;
+
+      bookmark.addEventListener('click', (e) => {
+        const input = document.querySelector('#bookmark[type="checkbox"]');
+        const $true = input.checked;
+        if (!$true) {
+          let bookmarkImg = `<img src="/public/image/책갈피on.svg" alt="" />`;
+          bookmark.innerHTML = bookmarkImg;
+        } else {
+          let bookmarkImg = `<img src="/public/image/책갈피.png" alt="" />`;
+
+          bookmark.innerHTML = bookmarkImg;
+        }
+      });
+
+      // 카테고리 크기 키우기
+      const categori = document.querySelectorAll('.categori label');
+
+      categori.forEach((item) => {
+        item.addEventListener('click', () => {
+          categori.forEach((item) => {
+            item.classList.remove('on');
+          });
+          item.classList.add('on');
+        });
+      });
     </script>
-    <!-- <script>
-      let date = new Date();
-      let year = date.getFullYear();
-      let month = date.getMonth() + 1;
-      let day = date.getDate();
-      let today = document.getElementById('current_date');
-      today.innerHTML = `${year}년 ${month}월 ${day}일`;
-    </script> -->
   </body>
 </html>

@@ -26,6 +26,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/public/css/index.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="/public/js/index.js" defer></script>
     <style>
       .swiper_wrap {
         height: calc(100vh - 55px - 250px);
@@ -63,7 +69,7 @@
             <div class="swiper-wrapper">
               <!-- 리스트 반복 -->
               <% for ( list in post) { %>
-              <div class="swiper-slide">
+              <div class="swiper-slide myList">
                 <li class="list">
                   <a href="/detail/<%=post[list]._id %>">
                     <div class="cate_wrap">
@@ -71,12 +77,14 @@
                         <%= post[list].구분 %>
                       </div>
                       <div class="bookmark">
-                        <img src=" <%= post[list].책갈피 %>" />
+                        <img src="<%= post[list].책갈피 %>" />
                       </div>
                     </div>
                     <div class="list_p_wrap">
                       <p class="list_title"><%= post[list].제목 %></p>
-                      <p class="date"><%= post[list].날짜 %></p>
+                      <p class="date" data-day="<%= post[list].날짜 %>">
+                        <%= post[list].날짜 %>
+                      </p>
                     </div>
                     <p class="list_contents"><%= post[list].내용 %></p>
                   </a>
@@ -90,42 +98,12 @@
         <!-- <i class="fa-solid fa-angles-down"></i> -->
 
         <div class="btns">
-          <button class="latest">최신이야기</button>
-          <button class="old">오래된 이야기</button>
+          <a class="latest" href="/">최신이야기</a>
+          <a class="old" href="/old">오래된 이야기</a>
           <button class="remember">기억하고 싶은 이야기</button>
           <a href="/write" class="add">+ 이야기 추가</a>
         </div>
       </div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 4,
-        direction: 'vertical',
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-
-      const rememberBtn = document.querySelector('.remember');
-
-      // function filterPosts() {
-      //   const alllist = document.querySelectorAll('.list');
-      //   alllist.forEach((post) => {
-      //     const bookmark = post.querySelector('.bookmark img');
-      //     if (!bookmark || bookmark.getAttribute('src') === '') {
-      //       post.classList.add('hidden');
-      //     } else {
-      //       post.classList.remove('hidden');
-      //     }
-      //   });
-      // }
-      // rememberBtn.addEventListener('click', filterPosts);
-    </script>
   </body>
 </html>

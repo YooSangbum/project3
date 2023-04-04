@@ -27,6 +27,16 @@ async function main() {
       // const query = {};
       const cursor = postCollection.find({});
       const result = (await cursor.toArray()).sort().reverse();
+
+      const result2 = (await cursor.toArray()).sort();
+      res.render('index.ejs', { post: result, post2: result2 });
+    });
+
+    app.get('/old', async (req, res) => {
+      // const query = {};
+      const cursor = postCollection.find({});
+      const result = (await cursor.toArray()).sort();
+
       res.render('index.ejs', { post: result });
     });
 
