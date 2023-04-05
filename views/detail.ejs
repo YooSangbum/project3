@@ -37,7 +37,7 @@
           <h2><%= data.제목%></h2>
           <p><%= data.날짜%></p>
         </div>
-        <div class="contents"><%= data.내용%></div>
+        <div class="contents"><%- temp %></div>
         <div class="btns">
           <a class="delete" data-id="<%= data._id%>">삭제</a>
           <a class="modify" href="/edit/<%= data._id%>">수정</a>

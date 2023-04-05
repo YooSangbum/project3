@@ -48,8 +48,10 @@ async function main() {
       const result = await postCollection.findOne({
         _id: parseInt(req.params.id),
       });
+      let temp = result.내용;
+      temp = temp.replaceAll('\r\n', '<br>');
       console.log(result);
-      res.render('detail.ejs', { data: result });
+      res.render('detail.ejs', { data: result, temp: temp });
     });
 
     app.get('/edit/:id', async function (req, res) {
